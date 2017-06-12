@@ -1,0 +1,98 @@
+body{
+	background: #f7f7f7;
+}
+.navbar {
+    border-radius: 0;
+}
+.banner a{
+	display: block;
+	height: 200px;
+	max-width: 1920px;
+	margin: 0 auto;
+	background: url(../images/1486535865333.jpg) no-repeat center;
+	background-size: cover;
+}
+.navbar-inverse .container .active{
+	color: #fff;
+    background-color: #080808;
+}
+.container a{
+	margin: 0!important;
+}
+.post{
+	padding: 35px;
+	padding-top: 15px;
+    background: white;
+    margin-bottom: 35px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:0px 1px 3px #122B40;
+    text-align: center;
+}
+.post p{
+	font-size: 20px;
+	font-family: "宋体";
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+.post .qw{
+	float: left;
+	margin: 20px!important;
+	margin-left: 0!important;
+}
+.col-md-4>.post:nth-of-type(2){
+	padding: 0;
+	padding-bottom: 35px;
+}
+.col-md-4>.post:nth-of-type(2)>p{
+	position: absolute;
+	height: 35px;
+	line-height: 35px;
+	margin: 0;
+	bottom: 0;
+}
+.r-pic{
+	border:1px solid #999999;
+	height: 300px;
+	background: url(../images/5c63f6246b600c333b71be48184c510fd9f9a122.jpg) no-repeat center;
+	background-size: cover;
+}
+.message{
+	cursor: pointer;
+}
+.face{
+	width: 150px;
+	height: 130px;
+	display: block;
+	margin: auto;
+}
+footer{
+	height: 200px;
+	background: white;
+	text-align: center;
+	line-height: 200px;
+	font-size: 40px;
+}
+.colors{
+	overflow: hidden;
+}
+.colors p{
+	width: 25%;
+	height: 5px;
+	margin: 0;
+	float: left;
+}
+.colors1{
+	background: orange;
+}
+.colors2{
+	background: orchid;
+}
+.colors3{
+	background: chartreuse;
+}
+.colors4{
+	background: deepskyblue;
+}

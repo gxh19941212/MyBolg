@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css"/>
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+  </head>
+  <body>
+		<%- include('title.ejs') %>
+    <% if(user){ %>
+    	<span>欢迎:<%- user %></span>
+    	<form  action="/users/message" method="post">
+    		<div>标题：<input type="text" name="title" id="title" class="form-control"/></div>
+			<div>标题：<textarea rows="5" class="form-control" name="con"></textarea></div>
+    		<input type="submit" value="发表" class="btn btn-primary"/>
+    	</form>
+    	<hr />
+    	<table class="table">
+    		<tr>
+    			<th>序号</th>
+    			<th>标题</th>
+    			<th>内容</th>
+    		</tr>
+    		<% datas.forEach(function(v,i){ %>
+    			<tr>
+    				<td><%- i+1 %></td>
+    				<td><%- v.title %></td>
+    				<td><%- v.con %></td>
+    			</tr>
+    		<% }) %>
+    	</table>
+    <% }else{ %>
+   
+    <% } %>
+  </body>
+</html>

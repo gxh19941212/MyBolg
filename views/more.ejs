@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css"/>
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+  </head>
+  <body>
+		<%- include('title.ejs') %>
+    <% if(user){ %>
+    	<span>欢迎:<%- user %></span>
+		<h2>从什么都没有的地方，到什么都没有的地方</h2>
+		<p>希望大哥动手的时候轻一点</p>
+    	</table>
+    <% }else{ %>
+   		<h1>成为会员就能打开新世界大大门啦！！</h1>
+    <% } %>
+  </body>
+</html>
